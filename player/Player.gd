@@ -4,7 +4,7 @@ extends KinematicBody
 var PlayerChaseState = load("res://player/states/PlayerChaseState.gd")
 var StateMachine = load("res://fsm/StateMachine.gd")
 
-var SteeringBehaviors = load("res://player/SteeringBehaviors.gd")
+var SteeringBehaviors = load("res://steering/SteeringBehaviors.gd")
 
 var speed = 400
 var direction = Vector3()

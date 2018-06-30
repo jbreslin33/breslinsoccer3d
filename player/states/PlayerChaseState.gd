@@ -1,4 +1,6 @@
 extends "res://fsm/State.gd"
+var SteeringBehaviors = load("res://steering/SteeringBehaviors.gd")
+
 
 func _ready():
 	# Called when the node is added to the scene for the first time.
@@ -6,11 +8,11 @@ func _ready():
 	pass
 
 func _enter(player):
-	
+		
 	pass
 	
 func _execute(player):
-	#print("PlayerChaseState: Execute")
+	print("PlayerChaseState: Execute")
 	pass
 	
 func _exit(player):

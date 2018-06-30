@@ -32,3 +32,35 @@ func zeroSteeringForce():
 func calculate():
 	zeroSteeringForce()
 
+#set gets
+func setSeek(b):
+	mSeek = b
+
+func setArrive(b):
+	mArrive = b
+
+func setSeparation(b):
+	mSeparation = b
+
+func setPursuit(b):
+	mPursuit = b
+
+func setInterpose(b):
+	mInterpose = b
+
+func getSeek():
+	return mSeek
+
+func getArrive():
+	return mArrive
+
+func getSeparation():
+	return mSeparation
+
+func getPursuit():
+	return mPursuit
+
+func getInterpose():
+	return mInterpose
+
+
