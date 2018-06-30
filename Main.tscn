@@ -13,7 +13,7 @@ script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Player" parent="." index="0" instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.1023, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.1023, 28.4861 )
 
 [node name="CameraTarget" parent="Player" index="2" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.41641, 7.72061 )
