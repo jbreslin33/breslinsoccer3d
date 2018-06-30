@@ -1,7 +1,7 @@
 extends KinematicBody
 
 #state machine
-var PlayerChaseState = load("res://player/PlayerChaseState.gd")
+var PlayerChaseState = load("res://player/states/PlayerChaseState.gd")
 var StateMachine = load("res://fsm/StateMachine.gd")
 
 var SteeringBehaviors = load("res://player/SteeringBehaviors.gd")
