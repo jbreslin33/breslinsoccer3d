@@ -34,6 +34,7 @@ func calculate():
 
 #set gets
 func setSeek(b):
+	print("setSeek true")
 	mSeek = b
 
 func setArrive(b):

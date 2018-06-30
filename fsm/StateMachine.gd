@@ -28,10 +28,14 @@ func update():
 		mCurrentState._execute(mOwner)
 		
 func changeState(state):
+	if (mCurrentState):
+		mCurrentState._exit(mOwner)
+	
 	mPreviousState = mCurrentState
-	mCurrentState._exit(mOwner)
+
 	mCurrentState = state
-	mCurrentState._enter(mOwner)
+	if (mCurrentState):
+		mCurrentState._enter(mOwner)
 
 func isInState(state):
 	if (state == mCurrentState):
