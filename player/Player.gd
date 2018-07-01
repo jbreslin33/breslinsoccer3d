@@ -20,6 +20,12 @@ var mBall = 0
 
 
 func _init():
+	pass
+
+func _ready():
+	
+	setBall($Ball)
+	
 	#steering
 	mSteeringBehaviors = SteeringBehaviors.new(self)
 	
@@ -27,8 +33,6 @@ func _init():
 	mStateMachine = StateMachine.new(self)
 	mPlayerChaseState = PlayerChaseState.new()
 	mStateMachine.changeState(mPlayerChaseState)
-
-func _ready():
 	pass
 
 func _physics_process(delta):
@@ -55,18 +59,24 @@ func _physics_process(delta):
 	mSteeringBehaviors.calculate()
 	
 func setBall(ball):
+	print("set yo Ball")
 	mBall = ball
 	
 func getBall():
 	return mBall
 
 func isBallWithingKickingRange():
+	print("isBall")
 	#var p3D = Position3D;
 	#var ballP3D = $Ball.Position3D
 	#var ball = get_node("/root/ball/Ball")
 	#var ballP3D = ball.Position3D
+	var a = get_translation()
+	print("about to deal with ball")
+	#mBall.callThisFunction()
+	#var b = mBall.get_translation()
 	
-	#var distanceFromBall = distance_squared_to(Position3D,mBall.Position3D)
+	#var distanceFromBall = distance_squared_to(get_translation(),mBall.get_translation())
 	#print("distanceFromBall:",distanceFromBall)
 	pass
 	

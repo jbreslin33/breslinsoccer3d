@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://player/Player.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://pitch/PitchLightGreen.tscn" type="PackedScene" id=5]
 [ext_resource path="res://pitch/PitchMediumGreen.tscn" type="PackedScene" id=6]
 [ext_resource path="res://ball/Ball.tscn" type="PackedScene" id=7]
+[ext_resource path="res://ball/Ball.gd" type="Script" id=8]
 
 [node name="Main" type="Spatial" index="0"]
 script = ExtResource( 1 )
@@ -22,7 +23,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.41641, 7.72061 )
 transform = Transform( 1, 0, 0, 0, 0.858891, 0.512159, 0, -0.512159, 0.858891, 0, 3.75212, 7.2374 )
 
 [node name="Pitch" type="Node" parent="." index="1"]
-editor/display_folded = true
 
 [node name="PitchLightGreen2" parent="Pitch" index="0" instance=ExtResource( 5 )]
 transform = Transform( 68, 0, 0, 0, 0.5, 0, 0, 0, 5, 0, -1, 50 )
@@ -109,4 +109,5 @@ transform = Transform( 68, 0, 0, 0, 0.5, 0, 0, 0, 5, 0, -1, -50 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Ball" parent="." index="2" instance=ExtResource( 7 )]
+script = ExtResource( 8 )
 
